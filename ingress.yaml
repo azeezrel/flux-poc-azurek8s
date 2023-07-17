@@ -14,8 +14,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: busapp
-            namespace: dev
+            name: busapp.dev.svc.cluster.local
             port:
               number: 80
  
@@ -25,7 +24,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: busapp-01
-            namespace: dev-space
+            name: busapp-01.dev-space.svc.cluster.local
             port:
               number: 8081
